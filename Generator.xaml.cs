@@ -15,14 +15,15 @@ using System.Windows.Shapes;
 
 namespace mapGeneratorZero
 {
-    /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
-    /// </summary>
     public partial class Generator : Window
     {
+        const string VERSION = "0.1.0t";
+
         public Generator()
         {
             InitializeComponent();
+
+            Title = "mapGeneratorZero " + VERSION;
         }
     }
 }
