@@ -13,17 +13,34 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
 namespace mapGeneratorZero
 {
     public partial class Generator : Window
     {
         const string VERSION = "0.1.0t";
 
+        ZeroOptions zeroOptions;
+        ZeroMap zeroMap = new ZeroMap();
+
         public Generator()
         {
             InitializeComponent();
 
             Title = "mapGeneratorZero " + VERSION;
+
+            /// Initialize all objects
+            zeroOptions = new ZeroOptions(this, zeroMap);
+            /// ==========
         }
+
+        /// F: Load options from JSON file
+        private void B_LoadSettings_Click(object sender, RoutedEventArgs e)
+        {
+            zeroOptions.loadSaveFromFile();
+        }
+        /// ==========
     }
 }
