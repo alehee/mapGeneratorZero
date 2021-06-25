@@ -14,7 +14,7 @@ namespace mapGeneratorZero
         public System.Drawing.Color colorStones = System.Drawing.Color.Gray;
     }
 
-    class ZeroMap
+    public class ZeroMap
     {
         bool loaded;
         bool separated;
@@ -49,7 +49,7 @@ namespace mapGeneratorZero
             mapBitmap = null;
         }
 
-        public void loadOptions(ZeroSave save)
+        void loadOptions(ZeroSave save)
         {
             /// Loading options to variable
             separated = save.mainSettings.separated;
@@ -86,7 +86,7 @@ namespace mapGeneratorZero
         }
     }
 
-    class ZeroCell
+    public class ZeroCell
     {
         ZeroColor zeroColor = new ZeroColor();
         string biomeName;
@@ -108,7 +108,7 @@ namespace mapGeneratorZero
         }
     }
 
-    class ZeroObject
+    public class ZeroObject
     {
         string name;
         System.Drawing.Color color;

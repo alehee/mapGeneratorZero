@@ -74,6 +74,8 @@ namespace mapGeneratorZero
 
             if (fileIsOk)
             {
+                
+
                 generatorWindow.Dispatcher.BeginInvoke(new Action(() =>
                 {
                     generatorWindow.TB_SettingsSET.Text = "";
@@ -106,6 +108,15 @@ namespace mapGeneratorZero
                         generatorWindow.TB_SettingsSET.Text += "        }, \n";
                     }
                 }));
+
+                // IF LOADED SETTINGS ARE FOR 'map' SET MAP INDICATOR INFORMATION
+                if(save.saveType == "map")
+                {
+                    generatorWindow.Dispatcher.BeginInvoke(new Action(() =>
+                    {
+                        generatorWindow.TB_SettingsGEN.Text = generatorWindow.TB_SettingsSET.Text;
+                    }));
+                }
             }
             else
             {
