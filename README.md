@@ -1,10 +1,10 @@
 # mapGeneratorZero
 **Program is in early development so there's not much to see! :/**
 
-**New updates soon...**
+**I might be come back to the project in a while**
 
 ## Description
-The *mapGeneratorZero* is a small application that creates visualisation of skirmish maps based on inputed options. Basic output is in bitmap, but other formats possible. It's a side project for my mini game in Unity, you can check it [here](https://github.com/alehee/projectZero).
+The *mapGeneratorZero* is a small application that creates visualisation of skirmish maps based on inputed options. Basic output is in bitmap, but other formats possible.
 
 ## Used technology
 Technology I used for this project:
