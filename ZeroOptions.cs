@@ -74,7 +74,6 @@ namespace mapGeneratorZero
 
             if (fileIsOk)
             {
-                
 
                 generatorWindow.Dispatcher.BeginInvoke(new Action(() =>
                 {

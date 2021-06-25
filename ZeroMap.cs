@@ -14,7 +14,7 @@ namespace mapGeneratorZero
         public System.Drawing.Color colorStones = System.Drawing.Color.Gray;
     }
 
-    public class ZeroMap
+    class ZeroMap
     {
         bool loaded;
         bool separated;
@@ -49,7 +49,7 @@ namespace mapGeneratorZero
             mapBitmap = null;
         }
 
-        void loadOptions(ZeroSave save)
+        public void loadOptions(ZeroSave save)
         {
             /// Loading options to variable
             separated = save.mainSettings.separated;
