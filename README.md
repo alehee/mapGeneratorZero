@@ -6,6 +6,10 @@
 ## Description
 The *mapGeneratorZero* is a small application that creates visualisation of skirmish maps based on inputed options. Basic output is in bitmap, but other formats possible.
 
+## Completed modules
+* Default generator GUI
+* Loading JSON save file
+
 ## Used technology
 Technology I used for this project:
 * C# .NET Framework
@@ -31,7 +35,7 @@ The application is still in early development. For now you can download the bran
 What's new? Here's the list:
 
 * **0.1.0** - *in development*
-  * still working on it...
+  * work suspended!
 
 ## Thank you!
 Thank you for peeking at my project!
